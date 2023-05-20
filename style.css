@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,15 +14,21 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
+    /* height: auto; */
+    min-height: 70px;
     background-color: rgb(18,18,62);
     overflow: hidden;
   /* background-color: #333; */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 nav ul{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li{
@@ -41,7 +48,12 @@ nav ul li{
 
 .left{
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
 
 .firstSection{
     display: flex;
@@ -101,4 +113,13 @@ nav ul li{
     width: 1px;
     background-color: white;
     margin: 0 100px;
+}
+
+.resbtn1{
+    background-color: rgb(233, 144, 144);
+    border: 1px solid white;
+    border-color: rgb(213, 102, 102);
+    padding: 5px 0;
+    color: black;
+    
 }
