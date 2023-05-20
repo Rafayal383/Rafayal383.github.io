@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Sanjay-Rafayal-Portfolio</title>
-</head>
-<body>
-    Hello world
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sanjay's Portfolio</div>
+        <div class="right">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About Me</li></a>
+            <a href="#"><li>Projects</li></a>
+            <a href=""><li>Contact Me</li></a>
+            <a href=""><li>Resume</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hey! my name is <span class="purple">Sanjay</span>
+                <p class="title">and I am a Passionate</p>
+                <span id="element"></span>
+                
+            </div>
+            <div class="rightSection">
+                <img src="./resources/coderPng1.png" alt="">
+            </div> 
+        </section>
+        <hr class="line1">
+        <section class="secondSection">
+            <span class="text-gray">
+                What i have done so far
+            </span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+      <script>
+        var typed = new Typed('#element', {
+  
+        strings: 
+        ['SDET', 'Software Development Engineer in Test'],
+        stringsElement: null,
+        typeSpeed: 50,
+        startDelay: 0,
+        backSpeed: 50,
+        smartBackspace: false,
+        shuffle: true,
+        backDelay: 700,
+        fadeOut: false,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+        loop: true,
+        loopCount: Infinity
+        });
+      </script>
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("nav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+  </body>
 </html>
+
+<script>
+
+</script>
