@@ -353,7 +353,7 @@ body {
 .project-card {
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 5%;
+    padding: 7% 5% 0% 5%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -361,11 +361,10 @@ body {
 }
 
 .project-card:hover{
-    transition: 0.s;
+    transition: 0.1s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     color: black;
     border: 1px solid var(--second-color);
-    box-shadow: inset 90px 0 0 white;
 }
 
 .project-card>:first-child{
@@ -386,8 +385,8 @@ body {
 .Info p {
     font-size: 16px;
     color: var(--second-color);
-    /* text-align: justify; */
-    /* height: auto; */
+    text-align: justify;
+    line-height: 20px;
 }
 
 
@@ -431,7 +430,7 @@ h4 {
 #Project-button {
     width: 70%;
     margin-top: 10px;
-    padding: 10px 10px;
+    padding: 20px 15px;
     border-top: 1px solid rgb(231, 231, 231);
     display: flex;
     justify-content: space-around;
@@ -613,6 +612,18 @@ textarea {
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:768px) {
     body {
@@ -802,9 +813,7 @@ textarea {
         flex-direction: column;
     }
 
-    .project-card>:first-child {
-        /* width: 30%; */
-    }
+   
 
 
     
