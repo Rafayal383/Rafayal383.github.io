@@ -345,7 +345,7 @@ body {
 #projects {
     display: grid;
     padding-top: 70px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     
 }
@@ -376,7 +376,7 @@ body {
 
 .project-card>:first-child{
     width: 90%;
-    height: 200px;
+    height: auto;
     margin: auto;
     margin-bottom: 20px;
     border-radius: 10px;
