@@ -98,3 +98,22 @@ sr.reveal("#name", {});
 sr.reveal("#email", { delay: 200 });
 sr.reveal("#description", { delay: 400 });
 sr.reveal(".Contact-button", { delay: 500 });
+
+function toggleMoreWrap() {
+  const moreText = document.getElementById("more-text");
+  const moreBtn = document.getElementById("more-btn");
+
+  if (moreText.classList.contains("hidden")) {
+      moreText.classList.remove("hidden");
+      moreBtn.innerHTML = "Less"; // Change button text to "Less"
+  } else {
+      moreText.classList.add("hidden");
+      moreBtn.innerHTML = "More"; // Change button text back to "More"
+  }
+}
+
+function closeNotice() {
+  document.getElementById('development-notice').classList.add('hidden');
+}
+
+
